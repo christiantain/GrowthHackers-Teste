@@ -1,0 +1,541 @@
+body {
+	background: #f4f6f7;
+	margin: 0;
+	overflow-y: auto;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 400; 
+	color: #5d6c72;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #edf1f2;
+  margin: 0px 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd3d5; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #acbcc0; 
+}
+
+/* ----------- SIDEBAR ----------- */
+
+nav.sidebar {
+	display: inline-block;
+	background: #e6edee;
+	min-height: 100vh;
+	width: 220px;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.2s ease;
+	z-index: 999;
+}
+
+nav.sidebar i.button-collapse {
+	font-size: 24px;
+	padding: 18px 15px;
+	color: #c3cfd3;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+nav.sidebar i.button-collapse:hover {
+	color: #b0c0c5;
+}
+
+nav.sidebar .main-user {
+	display: block;
+	padding: 20px 20px 0px 20px;
+}
+
+nav.sidebar .main-user .user-progress {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	float: left;
+}
+
+nav.sidebar .main-user .user-progress img {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	position: relative;
+	left: calc(50% - 20px);
+	top: calc(50% - 20px);
+}
+
+nav.sidebar .main-user .user-progress svg {
+	width: 61px;
+	display: block;
+	position: relative;
+	margin-left: -6px;
+	top: -50px;
+}
+
+nav.sidebar .main-user .user-progress path {
+	stroke-linecap: round;
+	stroke-width: 5;
+	fill:none;
+}
+
+nav.sidebar .main-user .user-progress path.grey {
+	stroke: #d1d9dd;
+}
+
+nav.sidebar .main-user .user-progress path.green {
+	stroke: #41b49e;
+	stroke-dasharray: calc(40 * 3.142 * 1.85);
+}
+
+
+nav.sidebar .main-user .user-progress path.green.p0 {stroke-dashoffset: 233;}
+nav.sidebar .main-user .user-progress path.green.p10 {stroke-dashoffset: 109.7;}
+nav.sidebar .main-user .user-progress path.green.p20 {stroke-dashoffset: 186.4;}
+nav.sidebar .main-user .user-progress path.green.p30 {stroke-dashoffset: 163.1;}
+nav.sidebar .main-user .user-progress path.green.p40 {stroke-dashoffset: 139.8;}
+nav.sidebar .main-user .user-progress path.green.p50 {stroke-dashoffset: 116.5;}
+nav.sidebar .main-user .user-progress path.green.p60 {stroke-dashoffset: 93.2;}
+nav.sidebar .main-user .user-progress path.green.p70 {stroke-dashoffset: 69.9;}
+nav.sidebar .main-user .user-progress path.green.p80 {stroke-dashoffset: 46.6;}
+nav.sidebar .main-user .user-progress path.green.p90 {stroke-dashoffset: 23.3;}
+nav.sidebar .main-user .user-progress path.green.p100 {stroke-dashoffset: 0;}
+
+
+nav.sidebar .main-user .user-data {
+	height: 50px;
+	padding: 8px 0px;
+}
+
+nav.sidebar .main-user .user-data .name {
+	display: block;
+	font-size: 15px;
+	font-weight: 600;
+	width: 100px;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+nav.sidebar .main-user .user-data .subtitle {
+	display: block;
+	font-size: 12px;
+	color: #a2adb0;
+	width: 100px;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+nav.sidebar ul {
+	padding: 0px 20px 0px 20px;
+	list-style: none;
+	margin: 0;
+}
+
+nav.sidebar ul li {
+	display: flex;
+	align-items: center;
+	padding: 3px 5px;
+	margin: 0px 0px 5px 0px;
+	background: transparent;
+	border-radius: 5px;
+	color: #5d6c72;
+	font-weight: 600;
+}
+
+nav.sidebar ul li:hover {
+	background: #e1e9ea;
+}
+
+nav.sidebar ul li:active {
+	background: #dee6e7;
+}
+
+nav.sidebar ul li i {
+	font-size: 20px;
+	color: #8499a2;
+	margin: 0px 5px;
+}
+
+nav.sidebar ul li .notifications {
+	display: inline-block;
+	background-color: #dc8383;
+	color: #fff;
+	font-size: 9px;
+	font-weight: 400;
+	text-align: center;
+	border-radius: 15px;
+	padding: 3px 6px;
+	min-width: 6px;
+	margin: 0px 10px;
+}
+
+nav.sidebar .sidebar-search {
+	padding: 0px 20px;
+}
+
+nav.sidebar .sidebar-search input {
+	display: block;
+	padding: 5px 10px 5px 35px;
+	margin: 10px 0px;
+	background: #fff;
+	border-radius: 5px;
+	color: #5d6c72;
+	font-weight: 600;
+	outline: none;
+	border: 0px;
+	font-family: 'Montserrat', sans-serif;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+	width: calc(100% - 45px);
+}
+
+nav.sidebar .sidebar-search i {
+	font-size: 19px;
+	color: #8499a2;
+	margin: 0px;
+	position: absolute;
+	margin-top: -32px;
+	margin-left: 10px;
+}
+
+nav.sidebarcollapsed {
+	display: inline-block;
+	background: #e6edee;
+	min-height: 100vh;
+	width: 50px;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: -50px;
+	transition: 0.2s ease;
+}
+
+nav.sidebarcollapsed i.button-collapse {
+	font-size: 24px;
+	padding: 18px 15px;
+	color: #c3cfd3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: rotate(180deg);
+}
+
+nav.sidebarcollapsed i.button-collapse:hover {
+	color: #b0c0c5;
+}
+
+
+
+
+/* ----------- BOARD ----------- */
+
+.main-panel {
+	display: block;
+	width: calc(100% - 260px);
+	height: calc(100vh - 110px);
+	white-space: nowrap;
+	overflow-x: scroll;
+	padding: 20px 20px 20px 20px;
+	margin-left: 220px;
+	transition: 0.2s ease;
+
+}
+
+.board-bar {
+	display: block;
+	width: calc(100% - 300px);
+	height: 60px;
+	padding: 0px 40px;
+	margin-left: 220px;
+	transition: 0.2s ease;
+}
+
+.board-title {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	float: left;
+	width: calc(100% - 250px);
+}
+
+.board-title .title-ico {
+	width: 22px;
+	height: 22px;
+	color: #8499a2;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.board-title h1 {
+	font-weight: 600;
+	margin: 10px;
+	width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.board-info {
+	height: 60px;
+	float: right;
+	display: flex;
+	align-items: center;
+	vertical-align: top;
+}
+
+.board-info .board-users {
+	display: flex;
+	align-items: center;
+	vertical-align: top;
+}
+
+@media only screen and (max-width: 830px) {
+	.board-info .board-users {
+		display: none;
+	}
+
+	.board-title {
+		width: calc(100% - 40px);
+	}
+}
+
+.board-info .board-users .user {
+	position: relative; 
+	margin-left: -10px;
+}
+
+.board-info .board-users img.user {
+	width: 25px;
+	height: 25px;
+	border-radius: 30px;
+	border: 1px solid #fff;
+}
+
+.board-info .board-users span.user.nophoto {
+	display: flex;
+	width: 25px;
+	height: 25px;
+	border-radius: 30px;
+	border: 1px solid;
+	font-size: 14px;
+	justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.board-info .board-users span.user.nophoto.color1 {background: #ffdcd7;border-color: #dfa49c;color: #dfa49c;}
+.board-info .board-users span.user.nophoto.color2 {background: #ffeebf;border-color: #e2b850;color: #e2b850;}
+.board-info .board-users span.user.nophoto.color3 {background: #d7f0ff;border-color: #91bbd3;color: #91bbd3;}
+
+.board-info .board-users .other-users {
+	color: #c6ced2;
+	font-weight: 400;
+	margin: 0px 15px;
+	font-size: 12px;
+}
+
+.board-bar .board-menu {
+	font-size: 23px;
+	color: #8499a2;
+}
+
+
+.column-list {
+	width: 320px;
+	margin: 0px 15px;
+	display: inline-block;
+	vertical-align: top;
+	height: calc(100vh - 150px);
+	font-family: sans-serif;
+}
+
+.column-list h3 {
+	text-transform: uppercase;
+	color: #8499a2;
+}
+
+.column-list .list-menu-button {
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-size: 28px;
+	padding: 5px;
+	float: right;
+	margin-top: -40px;
+	color: #8499a2;
+	opacity: 0.7;
+}
+
+.column-list .list-menu-button:hover {
+	opacity: 1;
+}
+
+.column-list .card-container {
+	background: #edf1f2;
+	border-radius: 8px;
+	padding: 20px 10px 10px 10px;
+	max-height: calc(100vh - 200px);
+}
+
+.column-list .card-container:hover {
+	background: #eaeced;
+}
+
+.column-list .card-container .card-list {
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0px 10px 0px 10px;
+	margin-bottom: 20px;
+	max-height: calc(100vh - 270px);
+	position: relative;
+	z-index: 90;
+}
+
+.column-list .card-container .card {
+	background: #fff;
+	border-radius: 5px;
+	padding: 25px;
+	margin-bottom: 20px;
+	white-space: normal;
+	font-weight: 600;
+	cursor: move;
+
+	transition: opacity 100ms;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.column-list .card-container .card:last-child {
+	margin-bottom: 0px;
+}
+
+.column-list .card-container .card:hover {
+	background: #f8f8f8;
+}
+
+.column-list .card-container .card .author {
+	margin: 15px 0px;
+	display: flex;
+	align-items: center;
+}
+
+.column-list .card-container .card .author span.name {
+	max-width: 130px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.column-list .card-container .card .author img {
+	width: 25px;
+	height: 25px;
+	border-radius: 30px;
+	margin-right: 10px;
+}
+
+.column-list .card-container .card .author .card-creation-date {
+	font-size: 10px;
+	font-weight: 400;
+	color: #cbd5d8;
+	margin: 7px 0px 6px 10px;
+}
+
+.column-list .card-container .card .card-menu-button {
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-size: 18px;
+	padding: 5px;
+	float: right;
+	position: relative;
+	bottom: 15px;
+	margin-right: -10px;
+	text-align: center;
+}
+
+.column-list .card-container .card .card-menu-button:active {
+	color: #5d6c72;
+}
+
+.column-list .card-container .new-card-button {
+	display: block;
+	background: #dde5e6;
+	border-radius: 5px;
+	text-align: center;
+	padding: 8px;
+	margin: 10px;
+	text-decoration: none;
+	color: #8499a2;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.column-list .card-container .new-card-button:hover {
+	background: #d6e3e5;
+}
+
+.column-list .card-container .new-card-button:active {
+	background: #cddde0;
+}
+
+@media only screen and (max-width: 760px) {
+	nav.sidebar {
+		left: -220px;
+	}
+	nav.sidebarcollapsed {
+		left: 0px;
+	}
+	.main-panel {
+		margin-left: 50px;
+		width: calc(100% - 90px);
+	}
+	.board-bar {
+		margin-left: 50px;
+		width: calc(100% - 130px);
+	}
+  
+}
+
+/* ----------- DRAG AND DROP CARD STYLES ----------- */
+
+
+.column-list .card-container .card.selected {
+	transform: scale(1.03) rotate(3deg);
+	transition: transform 100ms;
+}
+
+.column-list .card-container .card.ghost {
+	opacity: 0;
+}
+
+.column-list .card-container .card.drag {
+	opacity: 1;
+
+}

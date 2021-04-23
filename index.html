@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front-end Designer Teste - GrowthHackers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link href='css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<nav class="sidebar" id="sidebar">
+
+	<a href="javascript:void(0)" onclick="closeNav()"><i class='bx bxs-arrow-to-left button-collapse'></i></a>
+
+	<div class="main-user">
+		<div class="user-progress">
+			<img src="images/photo1.jpg" class="">
+			<svg viewbox="0 0 100 100"><path class="grey" d="M40,90 A40,40 0 1,1 60,90"/><path class="green p50" d="M40,90 A40,40 0 1,1 60,90"/></svg>
+      	</div>
+      	<div class="user-data">
+			<span class="name">Nick Dahl</span>
+			<span class="subtitle">Subtitle here</span>
+		</div>
+	</div>
+
+	<ul>
+		<a href="#"><li><i class='bx bx-user-circle'></i> Profile</li></a>
+		<a href="#"><li><i class='bx bx-list-check'></i> Tasks</li></a>
+		<a href="#"><li><i class='bx bx-notification'></i> Inbox <span class="notifications">9</span></li></a>
+	</ul>
+	<form action="" class="sidebar-search" autocomplete="off">
+		<input type="text" placeholder="Search" name="search">
+		<i class='bx bx-search' ></i>
+	</form>
+	
+</nav>
+
+<nav class="sidebarcollapsed" id="sidebarcollapsed">
+
+	<a href="javascript:void(0)" onclick="openNav()"><i class='bx bxs-arrow-to-left button-collapse'></i></a>
+	
+</nav>
+
+
+<div class="board-bar" id="boardbar">
+	<div class="board-title">
+		<div class="title-ico"><i class='bx bxs-star'></i></div>
+		<h1> Ideas</h1>
+	</div>
+
+	<div class="board-info">
+		<div class="board-users">
+			<img src="images/photo2.jpg" class="user">
+			<img src="images/photo3.jpg" class="user">
+			<img src="images/photo5.jpg" class="user">
+			<span class="user nophoto color1">F</span>
+			<span class="user nophoto color2">A</span>
+			<span class="user nophoto color3">S</span>
+			<span class="other-users">+ 125 others</span>
+		</div>
+		<a href="#" class="board-menu"><i class='bx bx-dots-horizontal-rounded'></i></a>
+	</div>
+</div>
+
+
+<div class="main-panel" id="main">
+
+	<div class="column-list">
+		<h3>To do</h3>
+		<a href="#" class="list-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+		<div class="card-container">
+
+			<div class="card-list" id="todo">
+
+				<div class="card">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis massa. Fusce accumsan in massa ac bibendum.
+					<div class="author">
+						<img src="images/photo4.jpg"><span class="name">Mary Jane</span><span class="card-creation-date">16 days ago</span>
+					</div>
+					<a href="#" class="card-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+				</div>
+
+				<div class="card">
+					Integer sit amet consequat orci, ut consectetur felis. Vivamus fringilla a libero quis egestas.
+					<div class="author">
+						<img src="images/photo4.jpg"><span class="name">Mary Jane</span><span class="card-creation-date">14 days ago</span>
+					</div>
+					<a href="#" class="card-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+				</div>
+
+				<div class="card">
+					Nulla facilisis, diam sed tincidunt hendrerit, velit eros vulputate risus.
+					<div class="author">
+						<img src="images/photo4.jpg"><span class="name">Mary Jane</span><span class="card-creation-date">13 days ago</span>
+					</div>
+					<a href="#" class="card-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+				</div>
+
+			</div>
+
+			<a href="#" class="new-card-button">+ New Card</a>
+
+		</div>
+	</div>
+
+	<div class="column-list" >
+		<h3>Doing</h3>
+		<a href="#" class="list-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+		<div class="card-container">
+
+			<div class="card-list" id="doing">
+
+				<div class="card">
+					Donec interdum malesuada rhoncus.
+					<div class="author">
+						<img src="images/photo3.jpg"><span class="name">Susanna Uchis</span><span class="card-creation-date">14 days ago</span>
+					</div>
+					<a href="#" class="card-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+				</div>
+
+				<div class="card">
+					Aliquam sit amet velit hendrerit, viverra ipsum at, mattis nulla.
+					<div class="author">
+						<img src="images/photo4.jpg"><span class="name">Mary Jane</span><span class="card-creation-date">11 days ago</span>
+					</div>
+					<a href="#" class="card-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+				</div>
+
+			</div>
+
+			<a href="#" class="new-card-button">+ New Card</a>
+
+		</div>
+	</div>
+
+	<div class="column-list">
+		<h3>Done</h3>
+		<a href="#" class="list-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+		<div class="card-container">
+
+			<div class="card-list" id="done">
+
+				<div class="card">
+					Quisque vestibulum pellentesque velit, eget auctor quam.
+					<div class="author">
+						<img src="images/photo5.jpg"><span class="name">Carlos Cuevas</span><span class="card-creation-date">15 days ago</span>
+					</div>
+					<a href="#" class="card-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+				</div>
+
+			</div>
+
+			<a href="#" class="new-card-button">+ New Card</a>
+
+		</div>
+	</div>
+
+	<div class="column-list">
+		<h3>Super done</h3>
+		<a href="#" class="list-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+		<div class="card-container">
+
+			<div class="card-list" id="superdone">
+
+				<div class="card">
+					Praesent rutrum, nulla sed gravida faucibus, nibh leo faucibus lorem, at egestas metus nunc eget arcu. Etiam consectetur pretium ante ac convallis.
+					<div class="author">
+						<img src="images/photo4.jpg"><span class="name">Mary Jane</span><span class="card-creation-date">16 days ago</span>
+					</div>
+					<a href="#" class="card-menu-button"><i class='bx bx-dots-horizontal-rounded'></i></a>
+				</div>
+
+			</div>
+
+			<a href="#" class="new-card-button">+ New Card</a>
+
+		</div>
+	</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
