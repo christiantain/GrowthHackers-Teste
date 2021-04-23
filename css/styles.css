@@ -376,7 +376,8 @@ nav.sidebarcollapsed i.button-collapse:hover {
 	font-family: sans-serif;
 }
 
-.column-list h3 {
+.column-list h2 {
+	font-size: 1.2em;
 	text-transform: uppercase;
 	color: #8499a2;
 }
